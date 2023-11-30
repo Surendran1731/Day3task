@@ -63,10 +63,32 @@
 
 
 //d.Return all the prime number in an array
-// let isPrime=function(...num){
-//       for (let i = 2; i < num; i++) {
-//         if (num % i === 0) return false;
+// const numbers = [1, 2, 3, 4, 5,6,7,8,9,11];
+// let findPrimeNum=function (arr){
+//   return arr.filter(num => {
+//     for (let i = 2; i < num; i++) {
+//       if (num % i === 0) {
+//         return false;
 //       }
-//       return num !== 1;
 //     }
-// console.log(isPrime(1,2,3,4,5));
+//     return num > 1;
+//   });
+// }
+// console.table(findPrimeNum(numbers));
+
+//IIFE
+// ((arr)=>{
+//   return arr.filter(num => {
+//     for (let i = 2; i < num; i++) {
+//       if (num % i === 0) {
+//         return false;
+//       }
+//     }
+//     return num > 1;
+//   });
+// })
+// console.table(findPrimeNum(numbers));
+
+// e.Return all the palindromes in an array
+
+

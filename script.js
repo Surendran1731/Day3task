@@ -1,5 +1,5 @@
 a.print odd number in an array
-anonymous function
+//anonymous function
 let oddNumber=function(...number){
   for(let i=0;i<=number.length;i++){
     if(number[i]%2==1){
@@ -9,7 +9,7 @@ let oddNumber=function(...number){
 }
 oddNumber(1,2,3,4,5,6,7,8,9,10);
 
-IIFE
+//IIFE
 ((...number)=>
 {
   for(let i=0;i<=number.length;i++){
@@ -19,7 +19,7 @@ IIFE
   }
 })(1,2,3,4,5,6,7,8,8,13);
 
-arrow
+//arrow
 let oddNumber= (...number)=>{
   for(let i=0;i<=number.length;i++){
     if(number[i]%2==1){
@@ -50,7 +50,7 @@ B.Convert all the strings to title caps in a string array
  console.log(words.join(" "));
  })(titled("Lorem ipsum dolor sit amet consectetur adipisicing elit"))
 
-arrow
+//arrow
 let titled=(str)=>{
     let words=str.toLowerCase().split(" ");
     // console.log(words)
@@ -73,7 +73,7 @@ sumOfNumbers(1,2,3,4,5,6,7,8,9,10)
 sumOfNumbers(1,2,3,4,5)
 
 
-IIFE
+//IIFE
 ((...num)=>{
   let sum=0;
   for(let i=0;i<num.length;i++){
@@ -82,7 +82,7 @@ IIFE
  console.log(sum)
 })(1,2,3,4,5,6,7,8,9,10)
 
-arrow
+//arrow
 let sumOfNumbers= (...num)=>{
   let sum=0;
   for(let i=0;i<num.length;i++){
@@ -107,7 +107,7 @@ let findPrimeNum=function (arr){
 }
 console.table(findPrimeNum(numbers));
 
-IIFE
+//IIFE
 ((arr)=>{
   return arr.filter(num => {
     for (let i = 2; i < num; i++) {
@@ -120,7 +120,7 @@ IIFE
 })
 console.table(findPrimeNum(numbers));
 
-arrow
+//arrow
 const numbers = [1, 2, 3, 4, 5,6,7,8,9,11];
 let findPrimeNum=(arr)=>{
   return arr.filter(num => {
@@ -142,7 +142,7 @@ let palindrome=function(str){
 }
 console.log(palindrome('eye'));
 
-IIFE
+//IIFE
 ((str)=>{
   let resversed=str.split("").reverse().join("")
   if(resversed === str) return true;
@@ -150,7 +150,7 @@ IIFE
 })
 (palindrome('eye'));
 
-arrow
+//arrow
 let palindrome= (str)=>{
   let resversed=str.split("").reverse().join("")
   if(resversed === str) return true;
@@ -172,7 +172,7 @@ let medianSortArray=function(num1,num2){
 }
  medianSortArray();
 
-arrow
+//arrow
 let num1=[1,2,3]
 let num2=[4,6,9]
 let medianSortArray= (num1,num2)=>{
@@ -192,14 +192,14 @@ let removeDuplicates=function(arr){
 }
 console.table(removeDuplicates([1,2,3,1,3,4,"C","JAVA","PYTHON","JAVA","C"]))
 
-IIFE
+//IIFE
 let list=[1,2,3,1,3,4,"C","JAVA","PYTHON","JAVA","C"]
 ( (arr)=>{
     return [...new Set(arr)]
   })
   (list)
 
-arrow
+//arrow
 let removeDuplicates= (arr)=>{
   return [...new Set(arr)]
 }
